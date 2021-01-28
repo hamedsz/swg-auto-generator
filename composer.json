@@ -1,7 +1,7 @@
 {
-  "name": "hamedsz/swg-auth-generator",
+  "name": "hamedsz/swg-auto-generator",
   "type": "library",
-  "description": "swagger auth api-docs generator",
+  "description": "swagger auto api-docs generator",
   "keywords": [
   ],
   "license": "MIT",
@@ -12,7 +12,7 @@
   },
   "autoload": {
     "psr-4": {
-      "hamedsz\\swg-auth-generator\\": "src"
+      "hamedsz\\swg-auto-generator\\": "src"
     }
   }
 }
