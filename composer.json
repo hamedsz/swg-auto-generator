@@ -1,0 +1,18 @@
+{
+  "name": "hamedsz/swg-auth-generator",
+  "type": "library",
+  "description": "swagger auth api-docs generator",
+  "keywords": [
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^7.2.5"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "hamedsz\\swg-auth-generator\\": "src"
+    }
+  }
+}
