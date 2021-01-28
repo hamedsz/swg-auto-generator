@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace SwgAuthGenerator;
 
 use Illuminate\Console\Command;
 use Illuminate\Routing\Route;
@@ -42,6 +42,7 @@ class SWG extends Command
      */
     public function handle()
     {
+        echo "Generating docs...";
         $routes = collect(\Illuminate\Support\Facades\Route::getRoutes())
             ->filter(function ($route) {
                 return Str::contains($route->uri(), "api/") && Str::contains($route->getName(), "req:");
@@ -170,5 +171,7 @@ class SWG extends Command
         $docs = json_encode($docsJson);
 
         file_put_contents(storage_path('api-docs/api-docs.json'), $docs);
+
+        echo "Generated Successfully";
     }
 }
